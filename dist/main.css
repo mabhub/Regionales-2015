@@ -8,12 +8,26 @@ html, body {
   height: 100%;
 }
 
+.leaflet-popup-content-wrapper {
+  border-radius: 0;
+}
+
+.leaflet-popup-content {
+  margin: 5px 6px;
+}
+
+.leaflet-popup-content .title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.leaflet-popup-tip {
+  display: none;
+}
+
 .chart-container {
   line-height: 75px;
-  min-width: 150px;
-  min-height: 75px;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .bar {
@@ -33,6 +47,10 @@ html, body {
   right: 0;
   left: 0;
   vertical-align: top;
+}
+
+.bar.small span {
+  top: -15px;
 }
 
 .bar.ps {
