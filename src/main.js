@@ -1,6 +1,129 @@
-var data = [
+require('./decimal-rounding.js');
+
+var data = [ // Fake data
     {
-        position: [43.9583006, 0.6879448],
+        position: [44, 0.6],
+        title: "Pyrénées Languedoc",
+        values: [
+            {
+                class: 'ps',
+                label: 'PS',
+                value: 30
+            },
+            {
+                class: 'lr',
+                label: 'LR',
+                value: 60
+            },
+            {
+                class: 'fn',
+                label: 'FN',
+                value: 15
+            },
+            {
+                class: 'eelv',
+                label: 'EELV',
+                value: 20
+            },
+            {
+                class: 'autres',
+                label: '...',
+                value: 23
+            }
+        ]
+    },
+    {
+        position: [47, -0.6],
+        values: [
+            {
+                class: 'ps',
+                label: 'PS',
+                value: 30
+            },
+            {
+                class: 'lr',
+                label: 'LR',
+                value: 60
+            },
+            {
+                class: 'fn',
+                label: 'FN',
+                value: 15
+            },
+            {
+                class: 'eelv',
+                label: 'EELV',
+                value: 20
+            },
+            {
+                class: 'autres',
+                label: '...',
+                value: 23
+            }
+        ]
+    },
+    {
+        position: [49, 3],
+        values: [
+            {
+                class: 'ps',
+                label: 'PS',
+                value: 30
+            },
+            {
+                class: 'lr',
+                label: 'LR',
+                value: 60
+            },
+            {
+                class: 'fn',
+                label: 'FN',
+                value: 15
+            },
+            {
+                class: 'eelv',
+                label: 'EELV',
+                value: 20
+            },
+            {
+                class: 'autres',
+                label: '...',
+                value: 23
+            }
+        ]
+    },
+    {
+        position: [48, 4],
+        values: [
+            {
+                class: 'ps',
+                label: 'PS',
+                value: 30
+            },
+            {
+                class: 'lr',
+                label: 'LR',
+                value: 60
+            },
+            {
+                class: 'fn',
+                label: 'FN',
+                value: 15
+            },
+            {
+                class: 'eelv',
+                label: 'EELV',
+                value: 20
+            },
+            {
+                class: 'autres',
+                label: '...',
+                value: 23
+            }
+        ]
+    },
+    {
+        position: [45, 5],
         values: [
             {
                 class: 'ps',
