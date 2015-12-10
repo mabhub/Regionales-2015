@@ -14,7 +14,12 @@
   "license": "ISC",
   "dependencies": {
     "browserify": "^12.0.1",
+    "leaflet": "^0.7.7",
+    "leaflet-osm": "^0.1.0",
+    "lodash": "^3.10.1",
     "node-sass": "^3.4.2",
+    "request": "^2.67.0",
+    "round10": "^1.0.3",
     "watchify": "^3.6.1"
   }
 }
