@@ -52,32 +52,32 @@ module.exports = function () {
      */
 
     function _buildDisplay (map) {
-        var data = dataStore['regionales-2015-tour1-results'];
+        var regions = dataStore['regionales-2015-tour1-resultats'];
 
-        data.forEach(function (dataset) {
+        regions.forEach(function (region) {
             var container = document.createElement('div');
             container.className = 'container';
 
             var title;
-            if (dataset.title) {
+            if (region.title) {
                 title = document.createElement('div');
                 title.className = 'title';
-                title.innerHTML = dataset.title;
+                title.innerHTML = region.title;
 
                 container.appendChild(title);
             }
 
             var bars          = document.createElement('div');
-            var barWidth      = Math.round10(100 / dataset.listes.length, -2);
-            var barsWidth     = dataset.listes.length * 30;
+            var barWidth      = Math.round10(100 / region.listes.length, -2);
+            var barsWidth     = region.listes.length * 30;
 
             bars.className = 'chart-container';
             bars.style.width  = barsWidth + 'px';
             bars.style.height = '75px';
 
-            // TODO: Prefilter dataset.listes so we display only lists width more than a predefined percentage
+            // TODO: Prefilter region.listes so we display only lists width more than a predefined percentage
 
-            dataset.listes.forEach(function (value) {
+            region.listes.forEach(function (value) {
                 var bar = document.createElement('div');
                 bar.classList.add('bar');
                 if (value.value <= 20) bar.classList.add('small');
@@ -121,8 +121,6 @@ module.exports = function () {
 
         var map  = _createMap();
         this.map = map;
-
-
 
         // TODO: Use real async routines
 
